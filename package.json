@@ -1,0 +1,20 @@
+{
+  "name": "tailwind-figma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/css/styles.css",
+    "serve": "concurrently \"postcss css/tailwind.css -o public/css/styles.css --watch\"  \"live-server ./public\"",
+    "start": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.19"
+  }
+}
